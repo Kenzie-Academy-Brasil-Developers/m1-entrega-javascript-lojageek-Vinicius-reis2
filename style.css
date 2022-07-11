@@ -1,0 +1,201 @@
+@keyframes neon {
+    from{
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+    to{
+        filter: drop-shadow(0 0 24px var(--cor-neon));
+    }
+}
+
+::-webkit-scrollbar{
+    background-color: #27272775;
+    border-radius: 14px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(48, 11, 134, 0.459);
+    border-radius: 14px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(48, 11, 134);
+    border-radius: 14px;
+}
+
+*{
+    margin: 0%;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2% 3%;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(48, 11, 134);
+}
+
+.logo{
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    font-size: 62px;
+    color: #db045e;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: #db045e;
+}
+
+.logo span{
+    font-family: 'Russo One', sans-serif;
+    text-decoration: none;
+    font-size: 52px;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    gap: 17%;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: space-between;
+    margin-right: 5%;
+}
+
+.header__button{
+    background-color: #db045e;
+    border: 1px solid #db045e;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 16px;
+    color: white;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: #db045e;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.header__button:hover{
+    background-color: #0d003a;
+    border: 1px solid #0d003a;
+    transition: 0.4s;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 16px;
+    color: #db045e;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: #db045e;
+}
+
+body{
+
+    background-color: #0d003a;  
+}
+
+ul img{
+    height: 160px;
+    width: 180px;
+    border-radius: 4%;
+    
+}
+.container{
+    margin-left: 3%;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+    font-family: 'Russo One', sans-serif;
+    font-size: 36;
+    color: #db045e;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: #db045e;
+}
+
+.subtitle p{
+    color: white;
+    font-size: 26px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.paintings{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    margin-top: 3%;
+}
+
+.paintings h2{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+
+.paintings__itens{
+    display: flex;
+    gap: 5%;
+    color: white;
+    margin-top: 3%;
+    
+}
+
+.paintings__itens__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s;
+    margin-bottom: 40px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-radius: 4%;
+}
+
+.paintings__itens__cards span, p{
+    margin-top: 6px;
+}
+
+.paintings__itens__cards:hover{
+    
+    box-shadow: 0 0 1.5em #db045e;;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.actions{
+    display:  flex;
+    flex-direction: column;
+    overflow-x: auto;
+    margin-top: 3%;
+}
+
+.paintings__itens__cards{
+    color: white;
+}
+
+.actions h2{
+    color: white;
+    font-family: 'Russo One', sans-serif;
+}
+
+.actions__itens{
+    display: flex;
+    gap: 5%;
+    margin-top: 3%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    color: white;
+    padding: 30px;
+    background-color: rgb(48, 11, 134);
+}
+
+footer p{
+    font-size: 26px;
+}
